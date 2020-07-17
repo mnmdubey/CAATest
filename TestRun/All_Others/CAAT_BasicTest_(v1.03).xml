@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="CAAT TEST Automation - Basic Test" annotations="JDK" parallel="tests">
+   
+   <listeners>
+  	<listener class-name = "com.caat.qa.ExtentReportListener.ExtentReporterTestNG"/>
+   </listeners>
+   
+   <test name="Cross Asyst Assignment: Launch Application">
+     <classes>
+       <class name="com.caat.qa.testcases.CAAT_OpenApplication_Test"/>
+     </classes>
+   </test>
+   
+    <test name="Cross Asyst Assignment: Create Account">
+     <classes>
+       <class name="com.caat.qa.testcases.CAAT_CreateAccount_Test"/>
+     </classes>
+   </test>
+   
+   <test name="Cross Asyst Assignment: Login and Purchase">
+     <classes>
+       <class name="com.caat.qa.testcases.CAAT_Login_Test"/>
+     </classes>
+   </test>
+   
+ </suite>

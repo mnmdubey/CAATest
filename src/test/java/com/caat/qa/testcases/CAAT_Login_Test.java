@@ -27,7 +27,7 @@ public class CAAT_Login_Test extends CAAT_TestBase{
 //--------------------------------------------------------------------------------
 		@BeforeTest
 		public void EnvironmentSetUp(){
-			createHTMLReport("LoginAndTransaction_Verification.html", "Login Page - Verification");
+			createHTMLReport("Login_Verification.html", "Login Page - Verification");
 			}	
 //-------------------------------------------------------------------------------		
 		@BeforeMethod
@@ -40,14 +40,15 @@ public class CAAT_Login_Test extends CAAT_TestBase{
 		}
 	
 //=========================================================================
-		@Test (priority = 1, enabled = false)
+		@Test (priority = 1, enabled = true)
 		public void LaunchApplication_Test(){
 			System.out.println("Lets Open the CAAT Web Application");
 			log_Info("Application has been Launched Successfully");
 		}
 		
-		@Test(priority = 31, enabled = true)
-		public void CAAT_LoginAndTransaction_Test() throws InterruptedException{
+		@Test(priority = 11, enabled = true)
+		//public void CAAT_Login_Test() throws InterruptedException{
+			public CAAT_Login_Test() throws InterruptedException{
 			loginPage.action_CAAT_Login(caat_TestData.Email, caat_TestData.Password);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			log_Info("User Logged in Successfully");
@@ -59,24 +60,17 @@ public class CAAT_Login_Test extends CAAT_TestBase{
 			
 			String MyPage_SignOutLabel = loginPage.validate_MyPageSignOut_Label();
 			compare_ExpVsAct_Values(MyPage_SignOutLabel, caat_ExpData.SignOutLabel_Exp);
-			
-			loginPage.action_Select_WOMAN_Item();
-			
-			String OrderConf_title = loginPage.validate_OrderConfirmation_Title();
-			compare_ExpVsAct_Values(OrderConf_title, caat_ExpData.MyOrderConfirmation_Title);
-			//Log the Status
-			
-		}
+	}
 		
-		@Test (priority = 9999, enabled = false)
-		public void CAAT_CloseApp_Test(){
+		@Test (priority = 9999, enabled = true)
+			public void CAAT_CloseApp_Test(){
 			log_Warning("All Test Completed, Application will be Closed");
-		}		
+			}		
 //========================================================================================
 	
 	@AfterMethod
 	public void ClosetheBroser(){
-		driver.quit();
+		//driver.quit();
 		System.out.println("Test Case RAN and Browser has been Closed");	
 	}
 //------------------------------------------------------------------------	

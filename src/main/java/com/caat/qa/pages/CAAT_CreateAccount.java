@@ -109,20 +109,19 @@ public class CAAT_CreateAccount extends CAAT_TestBase{
 				email_Create.sendKeys(caat_TestData.Email);
 				Thread.sleep(5000);
 				CA_Submit_Btn.click();
-				
 				Thread.sleep(1000);
 				
 				Title_Gender.click();
 				First_Name.sendKeys(caat_TestData.First_Name);
 				Thread.sleep(3000);
-				
-				
+								
 				Last_Name.sendKeys(caat_TestData.Last_Name);
 				Thread.sleep(3000);
 				Password.sendKeys(caat_TestData.Password);
 				
 				Add_FName.sendKeys(caat_TestData.Add_FName);
 				Thread.sleep(3000);
+				
 				Add_LName.sendKeys(caat_TestData.Add_LName);
 				Thread.sleep(3000);
 				

@@ -141,6 +141,32 @@ public void createHTMLReport(String VerifPageName, String TestPageName){
 				takeScreenShot("ScreenShot_"+DateTime+".png");
 			}	
 		}
+		
+		//Common Method to call in Other Classes
+			public void compare_ExpVsAct_TransAmount(Double aAmount, Double eAmount){
+				DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy__HH-mm-ss-SSS"); 
+				//DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+				Calendar cal = Calendar.getInstance();  
+				String DateTime = dateFormat.format(cal.getTime());
+				
+				System.out.println("DateTime: "+DateTime);
+				takeScreenShot("LetTakePrintAndSave.png");
+				System.out.println("Took the Print and Saved");
+				
+				if(eAmount.equals(aAmount))
+				{
+					System.out.println("Test Passed :: Expected and Actual Matched || Expected: "+eAmount + " | Actual: "+aAmount);
+					test.log(LogStatus.PASS, "Test Passed :: Expected and Actual Matched || Expected: "+eAmount + " | Actual: "+aAmount);
+					takeScreenShot("ScreenShot_"+DateTime+".png");
+				}
+				else
+				{
+					System.out.println("Test Failed :: Expected and Actual DID NOT Matched || Expected: "+eAmount + " | Actual: "+aAmount);
+					test.log(LogStatus.FAIL, "Test Failed :: Expected and Actual DID NOT Matched || Expected: "+eAmount + " | Actual: "+aAmount);
+					takeScreenShot("ScreenShot_"+DateTime+".png");
+				}	
+			}
+				
 //Common Method to call in Other Classes
 	public void compare_ExpVsAct_BooleanDecision(boolean eBooleanValue, boolean aBooleanValue){
 		if(eBooleanValue==aBooleanValue)

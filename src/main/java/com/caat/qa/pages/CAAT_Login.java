@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.JavascriptExecutor;
 
 import com.caat.qa.base.CAAT_TestBase;
 import com.caat.qa.testdata.CAAT_ExpectedData;
@@ -46,26 +47,24 @@ public class CAAT_Login extends CAAT_TestBase{
 		@FindBy(xpath="//*[@id='block_top_menu']/ul/li[1]/a")
 		WebElement MyPage_WOMAN_Section;
 		
+		@FindBy(xpath="//*[@id='center_column']/ul/li[3]/div/div[1]/div/a[2]/span")
+		WebElement MyPage_WOMAN_PD_QView;
 		
-		@FindBy(xpath="//*[@id='center_column']/ul/li[3]/div/div[1]/div/a[1]/img")
-		WebElement MyPage_WOMAN_Item;
+		@FindBy(xpath="//*[@id='bigpic']")
+		WebElement MyPage_WOMAN_PrintedDress;
 		
 		@FindBy(xpath="//*[@id='add_to_cart']/button/span")
-		WebElement MyPage_WOMAN_Add;
+		WebElement MyPage_WOMAN_PrintedDress_AddToCard;
+		
+		@FindBy(xpath="//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span")
+		WebElement PrcdToCheckOut;
 		
 //		@FindBy(xpath="//*[@id='quantity_wanted_p']/a[2]/span")
 //		WebElement Select_Quantity;
 //		
 //		@FindBy(xpath="//*[@id='our_price_display']")
 //		WebElement Item_Price;
-//		
-//		@FindBy(xpath="//*[@id='add_to_cart']/button")
-//					   
-//		WebElement AddToCart;
 	
-		@FindBy(xpath="//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span")
-		WebElement PrcdToCheckOut;
-		
 		@FindBy(xpath="//*[@id='center_column']/p[2]/a[1]/span")
 		WebElement Summary_PrcdToCheckOut;
 		
@@ -118,7 +117,7 @@ public class CAAT_Login extends CAAT_TestBase{
 				return new CAAT_HomePage();		
 				}
 			
-			public String validate_LoggedInUserName(){
+				public String validate_LoggedInUserName(){
 				String LoggedInUserName = LoggedIn_User_Name.getText();
 				return LoggedInUserName;
 				}
@@ -130,33 +129,37 @@ public class CAAT_Login extends CAAT_TestBase{
 				
 			public void action_Select_WOMAN_Item() throws InterruptedException{
 				MyPage_WOMAN_Section.click();
+				Thread.sleep(8000);
+				System.out.println("MyPage_WOMAN_Section.click");
+				
+				WebElement QVelement = driver.findElement(By.xpath("//*[@id='center_column']/ul/li[3]/div/div[1]/div/a[2]/span"));
+				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", QVelement);
+				
+				QVelement.click();
 				Thread.sleep(6000);
-				
-				driver.findElement(By.xpath("//*[@id='center_column']/ul/li[3]/div/div[1]/div/a[1]/img")).click();
-//				MyPage_Woman_PrintedDress.click();
-//				Thread.sleep(15000);
-				
-				driver.findElement(By.xpath("//*[@id='bigpic']")).click();
-//				MyPage_WOMAN_Item.click();
-				Thread.sleep(15000);
+//				JavascriptExecutor js = (JavascriptExecutor) driver;
+//				js.executeScript("arguments[0].scrollIntoView();", MyPage_WOMAN_PD_QView);
 				
 				
-//				Select_Quantity.click();
-//				
-//				String ItemPrice = Item_Price.getText();
-//				ItemPrice = ItemPrice.replace("$", "");
+//				MyPage_WOMAN_PD_QView.click();
+//				Thread.sleep(6000);
+//				System.out.println("MyPage_WOMAN_PD_QView.click");
 				
-//				AddToCart.click();
-//				Thread.sleep(5000);
+				MyPage_WOMAN_PrintedDress.click();
+				Thread.sleep(6000);
+				System.out.println("MyPage_WOMAN_PrintedDress.click");
 				
-				MyPage_WOMAN_Add.click();
-				Thread.sleep(5000);
-				
+				MyPage_WOMAN_PrintedDress_AddToCard.click();
+				Thread.sleep(6000);
+				System.out.println("MyPage_WOMAN_PrintedDress_AddToCard.click");
+
 				PrcdToCheckOut.click();
 				Thread.sleep(5000);
+				System.out.println("PrcdToCheckOut.click");
 				
 				Summary_PrcdToCheckOut.click();
 				Thread.sleep(5000);
+				System.out.println("Summary_PrcdToCheckOut.click");
 				
 				Address_PrcdToCheckOut.click();
 				Thread.sleep(5000);
