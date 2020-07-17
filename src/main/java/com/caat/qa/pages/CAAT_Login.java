@@ -44,46 +44,7 @@ public class CAAT_Login extends CAAT_TestBase{
 		@FindBy(xpath="//*[@id='header']/div[2]/div/div/nav/div[2]/a")
 		WebElement MyPage_SignOut_Label;
 		
-		@FindBy(xpath="//*[@id='block_top_menu']/ul/li[1]/a")
-		WebElement MyPage_WOMAN_Section;
 		
-		@FindBy(xpath="//*[@id='center_column']/ul/li[3]/div/div[1]/div/a[2]/span")
-		WebElement MyPage_WOMAN_PD_QView;
-		
-		@FindBy(xpath="//*[@id='bigpic']")
-		WebElement MyPage_WOMAN_PrintedDress;
-		
-		@FindBy(xpath="//*[@id='add_to_cart']/button/span")
-		WebElement MyPage_WOMAN_PrintedDress_AddToCard;
-		
-		@FindBy(xpath="//*[@id='layer_cart']/div[1]/div[2]/div[4]/a/span")
-		WebElement PrcdToCheckOut;
-		
-//		@FindBy(xpath="//*[@id='quantity_wanted_p']/a[2]/span")
-//		WebElement Select_Quantity;
-//		
-//		@FindBy(xpath="//*[@id='our_price_display']")
-//		WebElement Item_Price;
-	
-		@FindBy(xpath="//*[@id='center_column']/p[2]/a[1]/span")
-		WebElement Summary_PrcdToCheckOut;
-		
-		@FindBy(xpath="//*[@id='center_column']/form/p/button/span")
-		WebElement Address_PrcdToCheckOut;
-		
-		@FindBy(xpath="//*[@id='cgv']")
-		WebElement TermsAndService_CheckBox;
-		
-		@FindBy(xpath="//*[@id='form']/p/button/span")
-		WebElement Shipping_PrcdToCheckOut;
-		
-		@FindBy(xpath="//*[@id=HOOK_PAYMENT']/div[1]/div/p/a")
-		WebElement Payment_Wire;
-		
-		@FindBy(xpath="//*[@id='cart_navigation']/button/span")
-		WebElement IConfirmMyOrder_Btn;
-		
-	
 		//Initializing the Page Objects:
 			public CAAT_Login(){
 				
@@ -126,57 +87,4 @@ public class CAAT_Login extends CAAT_TestBase{
 				String MyPage_SignOutLabel = MyPage_SignOut_Label.getText();
 				return MyPage_SignOutLabel;
 				}
-				
-			public void action_Select_WOMAN_Item() throws InterruptedException{
-				MyPage_WOMAN_Section.click();
-				Thread.sleep(8000);
-				System.out.println("MyPage_WOMAN_Section.click");
-				
-				WebElement QVelement = driver.findElement(By.xpath("//*[@id='center_column']/ul/li[3]/div/div[1]/div/a[2]/span"));
-				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", QVelement);
-				
-				QVelement.click();
-				Thread.sleep(6000);
-//				JavascriptExecutor js = (JavascriptExecutor) driver;
-//				js.executeScript("arguments[0].scrollIntoView();", MyPage_WOMAN_PD_QView);
-				
-				
-//				MyPage_WOMAN_PD_QView.click();
-//				Thread.sleep(6000);
-//				System.out.println("MyPage_WOMAN_PD_QView.click");
-				
-				MyPage_WOMAN_PrintedDress.click();
-				Thread.sleep(6000);
-				System.out.println("MyPage_WOMAN_PrintedDress.click");
-				
-				MyPage_WOMAN_PrintedDress_AddToCard.click();
-				Thread.sleep(6000);
-				System.out.println("MyPage_WOMAN_PrintedDress_AddToCard.click");
-
-				PrcdToCheckOut.click();
-				Thread.sleep(5000);
-				System.out.println("PrcdToCheckOut.click");
-				
-				Summary_PrcdToCheckOut.click();
-				Thread.sleep(5000);
-				System.out.println("Summary_PrcdToCheckOut.click");
-				
-				Address_PrcdToCheckOut.click();
-				Thread.sleep(5000);
-				
-				TermsAndService_CheckBox.click();
-				Thread.sleep(10000);
-				
-				Shipping_PrcdToCheckOut.click();
-				Thread.sleep(5000);
-				
-				IConfirmMyOrder_Btn.click();
-				Thread.sleep(5000);
-				
-				}
-			
-			public String validate_OrderConfirmation_Title(){
-				return driver.getTitle();
-			}
-			
 	}

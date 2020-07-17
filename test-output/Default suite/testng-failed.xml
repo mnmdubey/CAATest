@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.caat.qa.testcases.CAAT_CreateAccount_Test"/>
+      <class name="com.caat.qa.testcases.CAAT_Login_Test"/>
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Failed suite [Default suite] -->

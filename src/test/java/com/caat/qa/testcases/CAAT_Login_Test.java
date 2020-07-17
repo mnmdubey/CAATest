@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.caat.qa.base.CAAT_TestBase;
+import com.caat.qa.pages.CAAT_CreateAccount;
 import com.caat.qa.pages.CAAT_Login;
 import com.caat.qa.pages.CAAT_OpenApplication;
 import com.caat.qa.testdata.CAAT_ExpectedData;
@@ -18,6 +19,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 public class CAAT_Login_Test extends CAAT_TestBase{
 	CAAT_OpenApplication openApp;
+	CAAT_CreateAccount caat_creatAccount;
 	CAAT_Login loginPage;
 	CAAT_ExpectedData caat_ExpData;
 	CAAT_TestData caat_TestData;
@@ -34,6 +36,7 @@ public class CAAT_Login_Test extends CAAT_TestBase{
 		public void SetUp() throws InterruptedException{
 			initialization();
 			openApp = new CAAT_OpenApplication();
+			caat_creatAccount = new CAAT_CreateAccount();
 			loginPage = new CAAT_Login();
 			caat_ExpData = new CAAT_ExpectedData();
 			caat_TestData = new CAAT_TestData();
@@ -47,8 +50,7 @@ public class CAAT_Login_Test extends CAAT_TestBase{
 		}
 		
 		@Test(priority = 11, enabled = true)
-		//public void CAAT_Login_Test() throws InterruptedException{
-			public CAAT_Login_Test() throws InterruptedException{
+			public void CAAT_LoginVerification_Test() throws InterruptedException{
 			loginPage.action_CAAT_Login(caat_TestData.Email, caat_TestData.Password);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			log_Info("User Logged in Successfully");
@@ -60,6 +62,9 @@ public class CAAT_Login_Test extends CAAT_TestBase{
 			
 			String MyPage_SignOutLabel = loginPage.validate_MyPageSignOut_Label();
 			compare_ExpVsAct_Values(MyPage_SignOutLabel, caat_ExpData.SignOutLabel_Exp);
+			
+			caat_creatAccount.action_SignOut();
+			//test.log(LogStatus.PASS, "User have been Logged out Successfully");
 	}
 		
 		@Test (priority = 9999, enabled = true)
@@ -70,7 +75,7 @@ public class CAAT_Login_Test extends CAAT_TestBase{
 	
 	@AfterMethod
 	public void ClosetheBroser(){
-		//driver.quit();
+		driver.quit();
 		System.out.println("Test Case RAN and Browser has been Closed");	
 	}
 //------------------------------------------------------------------------	

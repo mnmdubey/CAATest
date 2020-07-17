@@ -1,45 +1,392 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" total="17" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79660" started-at="2020-07-17T04:20:25Z" finished-at="2020-07-17T04:21:45Z">
+  <suite name="CAAT TEST Automation - Basic Test" duration-ms="579324" started-at="2020-07-17T05:25:20Z" finished-at="2020-07-17T05:34:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79660" started-at="2020-07-17T04:20:25Z" finished-at="2020-07-17T04:21:45Z">
-      <class name="com.caat.qa.testcases.CAAT_CreateAccount_Test">
-        <test-method status="PASS" signature="EnvironmentSetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@43a25848]" name="EnvironmentSetUp" is-config="true" duration-ms="290" started-at="2020-07-17T09:50:25Z" finished-at="2020-07-17T09:50:25Z">
+    <test name="Cross Asyst Assignment: Launch Application" duration-ms="76395" started-at="2020-07-17T05:25:20Z" finished-at="2020-07-17T05:26:36Z">
+      <class name="com.caat.qa.testcases.CAAT_OpenApplication_Test">
+        <test-method status="PASS" signature="EnvironmentSetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="EnvironmentSetUp" is-config="true" duration-ms="367" started-at="2020-07-17T10:55:20Z" finished-at="2020-07-17T10:55:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnvironmentSetUp -->
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@43a25848]" name="SetUp" is-config="true" duration-ms="21025" started-at="2020-07-17T09:50:25Z" finished-at="2020-07-17T09:50:46Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="SetUp" is-config="true" duration-ms="21028" started-at="2020-07-17T10:55:20Z" finished-at="2020-07-17T10:55:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="CAAT_CreateNewAccount_Test()[pri:31, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@43a25848]" name="CAAT_CreateNewAccount_Test" duration-ms="36699" started-at="2020-07-17T09:50:46Z" finished-at="2020-07-17T09:51:23Z">
+        <test-method status="PASS" signature="LaunchApplication_Test()[pri:10, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="LaunchApplication_Test" duration-ms="1546" started-at="2020-07-17T10:55:41Z" finished-at="2020-07-17T10:55:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="ClosetheBroser" is-config="true" duration-ms="5295" started-at="2020-07-17T10:55:43Z" finished-at="2020-07-17T10:55:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="SetUp" is-config="true" duration-ms="20606" started-at="2020-07-17T10:55:48Z" finished-at="2020-07-17T10:56:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="validate_CAAT_MainPage_TitleAndURL_Test()[pri:11, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="validate_CAAT_MainPage_TitleAndURL_Test" duration-ms="4539" started-at="2020-07-17T10:56:09Z" finished-at="2020-07-17T10:56:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_CAAT_MainPage_TitleAndURL_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="ClosetheBroser" is-config="true" duration-ms="1153" started-at="2020-07-17T10:56:13Z" finished-at="2020-07-17T10:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="SetUp" is-config="true" duration-ms="19238" started-at="2020-07-17T10:56:15Z" finished-at="2020-07-17T10:56:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="CAAT_CloseApp_Test()[pri:9999, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="CAAT_CloseApp_Test" duration-ms="1" started-at="2020-07-17T10:56:34Z" finished-at="2020-07-17T10:56:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CAAT_CloseApp_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="ClosetheBroser" is-config="true" duration-ms="2069" started-at="2020-07-17T10:56:34Z" finished-at="2020-07-17T10:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="TestCompleted()[pri:0, instance:com.caat.qa.testcases.CAAT_OpenApplication_Test@43a25848]" name="TestCompleted" is-config="true" duration-ms="535" started-at="2020-07-17T10:56:36Z" finished-at="2020-07-17T10:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCompleted -->
+      </class> <!-- com.caat.qa.testcases.CAAT_OpenApplication_Test -->
+    </test> <!-- Cross Asyst Assignment: Launch Application -->
+    <test name="Cross Asyst Assignment: Create Account" duration-ms="158171" started-at="2020-07-17T05:26:36Z" finished-at="2020-07-17T05:29:15Z">
+      <class name="com.caat.qa.testcases.CAAT_CreateAccount_Test">
+        <test-method status="PASS" signature="EnvironmentSetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="EnvironmentSetUp" is-config="true" duration-ms="2" started-at="2020-07-17T10:56:36Z" finished-at="2020-07-17T10:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnvironmentSetUp -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="SetUp" is-config="true" duration-ms="20814" started-at="2020-07-17T10:56:36Z" finished-at="2020-07-17T10:56:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LaunchApplication_Test()[pri:1, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="LaunchApplication_Test" duration-ms="0" started-at="2020-07-17T10:56:57Z" finished-at="2020-07-17T10:56:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="ClosetheBroser" is-config="true" duration-ms="1235" started-at="2020-07-17T10:56:57Z" finished-at="2020-07-17T10:56:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="SetUp" is-config="true" duration-ms="21204" started-at="2020-07-17T10:56:59Z" finished-at="2020-07-17T10:57:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="validate_CAAT_MainPage_TitleAndURL_Test()[pri:11, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="validate_CAAT_MainPage_TitleAndURL_Test" duration-ms="1928" started-at="2020-07-17T10:57:20Z" finished-at="2020-07-17T10:57:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_CAAT_MainPage_TitleAndURL_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="ClosetheBroser" is-config="true" duration-ms="1306" started-at="2020-07-17T10:57:22Z" finished-at="2020-07-17T10:57:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="SetUp" is-config="true" duration-ms="24256" started-at="2020-07-17T10:57:23Z" finished-at="2020-07-17T10:57:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="validate_SignIn_Label_Test()[pri:21, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="validate_SignIn_Label_Test" duration-ms="2493" started-at="2020-07-17T10:57:47Z" finished-at="2020-07-17T10:57:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_SignIn_Label_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="ClosetheBroser" is-config="true" duration-ms="1031" started-at="2020-07-17T10:57:50Z" finished-at="2020-07-17T10:57:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="SetUp" is-config="true" duration-ms="19090" started-at="2020-07-17T10:57:51Z" finished-at="2020-07-17T10:58:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="CAAT_CreateNewAccount_Test()[pri:31, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="CAAT_CreateNewAccount_Test" duration-ms="39256" started-at="2020-07-17T10:58:10Z" finished-at="2020-07-17T10:58:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CAAT_CreateNewAccount_Test -->
-        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@43a25848]" name="ClosetheBroser" is-config="true" duration-ms="1049" started-at="2020-07-17T09:51:23Z" finished-at="2020-07-17T09:51:24Z">
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="ClosetheBroser" is-config="true" duration-ms="1306" started-at="2020-07-17T10:58:49Z" finished-at="2020-07-17T10:58:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClosetheBroser -->
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@43a25848]" name="SetUp" is-config="true" duration-ms="16631" started-at="2020-07-17T09:51:24Z" finished-at="2020-07-17T09:51:41Z">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="SetUp" is-config="true" duration-ms="22354" started-at="2020-07-17T10:58:50Z" finished-at="2020-07-17T10:59:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="ClosingTheApplication_Test()[pri:999, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@43a25848]" name="ClosingTheApplication_Test" duration-ms="1" started-at="2020-07-17T09:51:41Z" finished-at="2020-07-17T09:51:41Z">
+        <test-method status="PASS" signature="ClosingTheApplication_Test()[pri:999, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="ClosingTheApplication_Test" duration-ms="1" started-at="2020-07-17T10:59:13Z" finished-at="2020-07-17T10:59:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClosingTheApplication_Test -->
-        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@43a25848]" name="ClosetheBroser" is-config="true" duration-ms="3278" started-at="2020-07-17T09:51:41Z" finished-at="2020-07-17T09:51:44Z">
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="ClosetheBroser" is-config="true" duration-ms="1724" started-at="2020-07-17T10:59:13Z" finished-at="2020-07-17T10:59:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClosetheBroser -->
-        <test-method status="PASS" signature="TestCompleted()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@43a25848]" name="TestCompleted" is-config="true" duration-ms="670" started-at="2020-07-17T09:51:44Z" finished-at="2020-07-17T09:51:45Z">
+        <test-method status="PASS" signature="TestCompleted()[pri:0, instance:com.caat.qa.testcases.CAAT_CreateAccount_Test@2acf57e3]" name="TestCompleted" is-config="true" duration-ms="164" started-at="2020-07-17T10:59:15Z" finished-at="2020-07-17T10:59:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCompleted -->
       </class> <!-- com.caat.qa.testcases.CAAT_CreateAccount_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Cross Asyst Assignment: Create Account -->
+    <test name="Cross Asyst Assignment: Login" duration-ms="79266" started-at="2020-07-17T05:29:15Z" finished-at="2020-07-17T05:30:34Z">
+      <class name="com.caat.qa.testcases.CAAT_Login_Test">
+        <test-method status="PASS" signature="EnvironmentSetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="EnvironmentSetUp" is-config="true" duration-ms="10" started-at="2020-07-17T10:59:15Z" finished-at="2020-07-17T10:59:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnvironmentSetUp -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="SetUp" is-config="true" duration-ms="18353" started-at="2020-07-17T10:59:15Z" finished-at="2020-07-17T10:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LaunchApplication_Test()[pri:1, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="LaunchApplication_Test" duration-ms="1" started-at="2020-07-17T10:59:33Z" finished-at="2020-07-17T10:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="ClosetheBroser" is-config="true" duration-ms="1131" started-at="2020-07-17T10:59:33Z" finished-at="2020-07-17T10:59:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="SetUp" is-config="true" duration-ms="17555" started-at="2020-07-17T10:59:34Z" finished-at="2020-07-17T10:59:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="CAAT_LoginVerification_Test()[pri:11, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="CAAT_LoginVerification_Test" duration-ms="17575" started-at="2020-07-17T10:59:52Z" finished-at="2020-07-17T11:00:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CAAT_LoginVerification_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="ClosetheBroser" is-config="true" duration-ms="913" started-at="2020-07-17T11:00:09Z" finished-at="2020-07-17T11:00:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="SetUp" is-config="true" duration-ms="21991" started-at="2020-07-17T11:00:10Z" finished-at="2020-07-17T11:00:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="CAAT_CloseApp_Test()[pri:9999, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="CAAT_CloseApp_Test" duration-ms="0" started-at="2020-07-17T11:00:32Z" finished-at="2020-07-17T11:00:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CAAT_CloseApp_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="ClosetheBroser" is-config="true" duration-ms="1679" started-at="2020-07-17T11:00:32Z" finished-at="2020-07-17T11:00:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="TestCompleted()[pri:0, instance:com.caat.qa.testcases.CAAT_Login_Test@35f983a6]" name="TestCompleted" is-config="true" duration-ms="53" started-at="2020-07-17T11:00:34Z" finished-at="2020-07-17T11:00:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCompleted -->
+      </class> <!-- com.caat.qa.testcases.CAAT_Login_Test -->
+    </test> <!-- Cross Asyst Assignment: Login -->
+    <test name="Cross Asyst Assignment: Login and Purchase" duration-ms="134851" started-at="2020-07-17T05:30:34Z" finished-at="2020-07-17T05:32:49Z">
+      <class name="com.caat.qa.testcases.CAAT_LoginAndPurchase_Test">
+        <test-method status="PASS" signature="EnvironmentSetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="EnvironmentSetUp" is-config="true" duration-ms="10" started-at="2020-07-17T11:00:34Z" finished-at="2020-07-17T11:00:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnvironmentSetUp -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="SetUp" is-config="true" duration-ms="18589" started-at="2020-07-17T11:00:34Z" finished-at="2020-07-17T11:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LaunchApplication_Test()[pri:1, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="LaunchApplication_Test" duration-ms="0" started-at="2020-07-17T11:00:53Z" finished-at="2020-07-17T11:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="ClosetheBroser" is-config="true" duration-ms="4352" started-at="2020-07-17T11:00:53Z" finished-at="2020-07-17T11:00:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="SetUp" is-config="true" duration-ms="20874" started-at="2020-07-17T11:00:57Z" finished-at="2020-07-17T11:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="FAIL" signature="CAAT_LoginAndTransaction_Test()[pri:21, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="CAAT_LoginAndTransaction_Test" duration-ms="47860" started-at="2020-07-17T11:01:18Z" finished-at="2020-07-17T11:02:06Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=83.0.4103.116)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CM7QV2O', ip: '192.168.2.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1d7b38f927b33e029ffdb76d55bf412f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.116)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CM7QV2O', ip: '192.168.2.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1d7b38f927b33e029ffdb76d55bf412f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.caat.qa.pages.CAAT_LoginAndPurchase.action_Select_WOMAN_Item(CAAT_LoginAndPurchase.java:138)
+	at com.caat.qa.testcases.CAAT_LoginAndPurchase_Test.CAAT_LoginAndTransaction_Test(CAAT_LoginAndPurchase_Test.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CAAT_LoginAndTransaction_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="ClosetheBroser" is-config="true" duration-ms="14321" started-at="2020-07-17T11:02:06Z" finished-at="2020-07-17T11:02:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="SetUp" is-config="true" duration-ms="25991" started-at="2020-07-17T11:02:20Z" finished-at="2020-07-17T11:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="CAAT_CloseApp_Test()[pri:9999, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="CAAT_CloseApp_Test" duration-ms="0" started-at="2020-07-17T11:02:46Z" finished-at="2020-07-17T11:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CAAT_CloseApp_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="ClosetheBroser" is-config="true" duration-ms="2776" started-at="2020-07-17T11:02:46Z" finished-at="2020-07-17T11:02:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="TestCompleted()[pri:0, instance:com.caat.qa.testcases.CAAT_LoginAndPurchase_Test@6cd8737]" name="TestCompleted" is-config="true" duration-ms="71" started-at="2020-07-17T11:02:49Z" finished-at="2020-07-17T11:02:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCompleted -->
+      </class> <!-- com.caat.qa.testcases.CAAT_LoginAndPurchase_Test -->
+    </test> <!-- Cross Asyst Assignment: Login and Purchase -->
+    <test name="Cross Asyst Assignment: Transaction History" duration-ms="130514" started-at="2020-07-17T05:32:49Z" finished-at="2020-07-17T05:34:59Z">
+      <class name="com.caat.qa.testcases.CAAT_ProfileAndTrans_Test">
+        <test-method status="PASS" signature="EnvironmentSetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="EnvironmentSetUp" is-config="true" duration-ms="9" started-at="2020-07-17T11:02:49Z" finished-at="2020-07-17T11:02:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnvironmentSetUp -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="SetUp" is-config="true" duration-ms="46367" started-at="2020-07-17T11:02:49Z" finished-at="2020-07-17T11:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="LaunchApplication_Test()[pri:1, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="LaunchApplication_Test" duration-ms="0" started-at="2020-07-17T11:03:35Z" finished-at="2020-07-17T11:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="ClosetheBroser" is-config="true" duration-ms="2021" started-at="2020-07-17T11:03:35Z" finished-at="2020-07-17T11:03:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="SetUp" is-config="true" duration-ms="32664" started-at="2020-07-17T11:03:37Z" finished-at="2020-07-17T11:04:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="FAIL" signature="CAAT_LoginAndTransactionAmountVerification_Test()[pri:11, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="CAAT_LoginAndTransactionAmountVerification_Test" duration-ms="12610" started-at="2020-07-17T11:04:10Z" finished-at="2020-07-17T11:04:23Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='order-list']/tbody/tr/td[3]/span"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CM7QV2O', ip: '192.168.2.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1caff23de04620357ecfb85aa7183806
+*** Element info: {Using=xpath, value=//*[@id='order-list']/tbody/tr/td[3]/span}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='order-list']/tbody/tr/td[3]/span"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-CM7QV2O', ip: '192.168.2.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.14 (be04594a2b841..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62729}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1caff23de04620357ecfb85aa7183806
+*** Element info: {Using=xpath, value=//*[@id='order-list']/tbody/tr/td[3]/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.caat.qa.pages.CAAT_ProfileAndTrans.validate_TransactionAmount(CAAT_ProfileAndTrans.java:100)
+	at com.caat.qa.testcases.CAAT_ProfileAndTrans_Test.CAAT_LoginAndTransactionAmountVerification_Test(CAAT_ProfileAndTrans_Test.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CAAT_LoginAndTransactionAmountVerification_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="ClosetheBroser" is-config="true" duration-ms="2463" started-at="2020-07-17T11:04:23Z" finished-at="2020-07-17T11:04:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="SetUp" is-config="true" duration-ms="32646" started-at="2020-07-17T11:04:25Z" finished-at="2020-07-17T11:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="CAAT_CloseApp_Test()[pri:9999, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="CAAT_CloseApp_Test" duration-ms="0" started-at="2020-07-17T11:04:58Z" finished-at="2020-07-17T11:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CAAT_CloseApp_Test -->
+        <test-method status="PASS" signature="ClosetheBroser()[pri:0, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="ClosetheBroser" is-config="true" duration-ms="1632" started-at="2020-07-17T11:04:58Z" finished-at="2020-07-17T11:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosetheBroser -->
+        <test-method status="PASS" signature="TestCompleted()[pri:0, instance:com.caat.qa.testcases.CAAT_ProfileAndTrans_Test@21bcffb5]" name="TestCompleted" is-config="true" duration-ms="98" started-at="2020-07-17T11:04:59Z" finished-at="2020-07-17T11:04:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCompleted -->
+      </class> <!-- com.caat.qa.testcases.CAAT_ProfileAndTrans_Test -->
+    </test> <!-- Cross Asyst Assignment: Transaction History -->
+  </suite> <!-- CAAT TEST Automation - Basic Test -->
 </testng-results>

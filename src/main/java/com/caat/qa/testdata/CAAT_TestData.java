@@ -3,7 +3,7 @@ package com.caat.qa.testdata;
 import org.openqa.selenium.support.ui.Select;
 
 public class CAAT_TestData {
-	public String Email = "caat_email_006@gmail.com";
+	public String Email = "caat_email_007@gmail.com";
 	
 	public String First_Name = "Manoranjan";
 	public String Last_Name = "Dubey";
@@ -17,7 +17,7 @@ public class CAAT_TestData {
 	public String Postal_Code = "41023";
 	public String Select_Country = "United States";
 	public String Mobile = "8080706038";
-	public String Alt_Email = "caat_006@gmail.com";
+	public String Alt_Email = "caat_007@gmail.com";
 	
 	public double Order_Qnty = 2;
 	public double ItemPrice = 26;

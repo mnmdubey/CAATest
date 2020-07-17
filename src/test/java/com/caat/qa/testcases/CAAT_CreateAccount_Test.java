@@ -45,13 +45,13 @@ public class CAAT_CreateAccount_Test extends CAAT_TestBase{
 		}
 	
 //=========================================================================
-		@Test (priority = 1, enabled = false)
+		@Test (priority = 1, enabled = true)
 		public void LaunchApplication_Test(){
 		System.out.println("Lets Open the CAAT Application");
 		log_Info("Application has been Launched Successfully");
 		}
 
-		@Test (priority = 11, enabled = false)
+		@Test (priority = 11, enabled = true)
 		public void validate_CAAT_MainPage_TitleAndURL_Test(){
 		//Title
 		String CAAT_MainPage_Title = caat_creatAccount.validate_CAAT_MainPage_Title();
@@ -62,7 +62,7 @@ public class CAAT_CreateAccount_Test extends CAAT_TestBase{
 		compare_ExpVsAct_Values(CAAT_MainPage_URL, caat_ExpData.MainPage_URL);
 		}
 
-		@Test (priority = 21, enabled = false)
+		@Test (priority = 21, enabled = true)
 		public void validate_SignIn_Label_Test() throws InterruptedException{
 		String CAAT_SignInLabel = caat_creatAccount.validate_SignIn_Label();
 		compare_ExpVsAct_Values(CAAT_SignInLabel, caat_ExpData.LP_SignIn_Label);			

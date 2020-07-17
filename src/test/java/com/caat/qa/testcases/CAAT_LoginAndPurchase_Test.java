@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import com.caat.qa.base.CAAT_TestBase;
 import com.caat.qa.pages.CAAT_Login;
+import com.caat.qa.pages.CAAT_LoginAndPurchase;
 import com.caat.qa.pages.CAAT_OpenApplication;
 import com.caat.qa.testdata.CAAT_ExpectedData;
 import com.caat.qa.testdata.CAAT_TestData;
@@ -20,6 +21,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 public class CAAT_LoginAndPurchase_Test extends CAAT_TestBase{
 	CAAT_OpenApplication openApp;
 	CAAT_Login loginPage;
+	CAAT_LoginAndPurchase caat_loginPurchase;
 	CAAT_ExpectedData caat_ExpData;
 	CAAT_TestData caat_TestData;
 	
@@ -36,12 +38,13 @@ public class CAAT_LoginAndPurchase_Test extends CAAT_TestBase{
 			initialization();
 			openApp = new CAAT_OpenApplication();
 			loginPage = new CAAT_Login();
+			caat_loginPurchase = new CAAT_LoginAndPurchase();
 			caat_ExpData = new CAAT_ExpectedData();
 			caat_TestData = new CAAT_TestData();
 		}
 	
 //=========================================================================
-		@Test (priority = 1, enabled = false)
+		@Test (priority = 1, enabled = true)
 		public void LaunchApplication_Test(){
 			System.out.println("Lets Open the CAAT Web Application");
 			log_Info("Application has been Launched Successfully");
@@ -54,14 +57,14 @@ public class CAAT_LoginAndPurchase_Test extends CAAT_TestBase{
 			log_Info("User Logged in Successfully");
 			takeScreenShot("CAAT_LoginVerification_Test_1.png");
 			
-			loginPage.action_Select_WOMAN_Item();
+			caat_loginPurchase.action_Select_WOMAN_Item();
 			
-			String OrderConf_title = loginPage.validate_OrderConfirmation_Title();
+			String OrderConf_title = caat_loginPurchase.validate_OrderConfirmation_Title();
 			compare_ExpVsAct_Values(OrderConf_title, caat_ExpData.MyOrderConfirmation_Title);
 			//Log the Status
 		}
 		
-		@Test (priority = 9999, enabled = false)
+		@Test (priority = 9999, enabled = true)
 			public void CAAT_CloseApp_Test(){
 			log_Warning("All Test Completed, Application will be Closed");
 			}		
@@ -69,7 +72,7 @@ public class CAAT_LoginAndPurchase_Test extends CAAT_TestBase{
 	
 	@AfterMethod
 	public void ClosetheBroser(){
-		//driver.quit();
+		driver.quit();
 		System.out.println("Test Case RAN and Browser has been Closed");	
 	}
 //------------------------------------------------------------------------	

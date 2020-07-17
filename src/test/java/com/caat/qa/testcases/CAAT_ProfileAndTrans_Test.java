@@ -44,7 +44,7 @@ public class CAAT_ProfileAndTrans_Test extends CAAT_TestBase{
 		}
 	
 //=========================================================================
-		@Test (priority = 1, enabled = false)
+		@Test (priority = 1, enabled = true)
 		public void LaunchApplication_Test(){
 			System.out.println("Lets Open the CAAT Web Application");
 			log_Info("Application has been Launched Successfully");
@@ -69,7 +69,7 @@ public class CAAT_ProfileAndTrans_Test extends CAAT_TestBase{
 				
 			}
 		
-		@Test (priority = 9999, enabled = false)
+		@Test (priority = 9999, enabled = true)
 		public void CAAT_CloseApp_Test(){
 		log_Warning("All Test Completed, Application will be Closed");
 		}		
@@ -77,7 +77,7 @@ public class CAAT_ProfileAndTrans_Test extends CAAT_TestBase{
 	
 	@AfterMethod
 	public void ClosetheBroser(){
-		//driver.quit();
+		driver.quit();
 		System.out.println("Test Case RAN and Browser has been Closed");	
 	}
 //------------------------------------------------------------------------	

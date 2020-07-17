@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [CAAT TEST Automation - Basic Test]" parallel="tests">
+  <test name="Cross Asyst Assignment: Launch Application">
+    <classes>
+      <class name="com.caat.qa.testcases.CAAT_OpenApplication_Test"/>
+    </classes>
+  </test> <!-- Cross Asyst Assignment: Launch Application -->
+  <test name="Cross Asyst Assignment: Create Account">
     <classes>
       <class name="com.caat.qa.testcases.CAAT_CreateAccount_Test"/>
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Cross Asyst Assignment: Create Account -->
+  <test name="Cross Asyst Assignment: Login">
+    <classes>
+      <class name="com.caat.qa.testcases.CAAT_Login_Test"/>
+    </classes>
+  </test> <!-- Cross Asyst Assignment: Login -->
+  <test name="Cross Asyst Assignment: Login and Purchase">
+    <classes>
+      <class name="com.caat.qa.testcases.CAAT_LoginAndPurchase_Test"/>
+    </classes>
+  </test> <!-- Cross Asyst Assignment: Login and Purchase -->
+  <test name="Cross Asyst Assignment: Transaction History">
+    <classes>
+      <class name="com.caat.qa.testcases.CAAT_ProfileAndTrans_Test"/>
+    </classes>
+  </test> <!-- Cross Asyst Assignment: Transaction History -->
+  <test name="Cross Asyst Assignment: Login and Purchase(failed)" parallel="tests">
+    <classes>
+      <class name="com.caat.qa.testcases.CAAT_Login_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="ClosetheBroser"/>
+          <include name="TestCompleted"/>
+          <include name="EnvironmentSetUp"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_Login_Test -->
+      <class name="com.caat.qa.testcases.CAAT_LoginAndPurchase_Test">
+        <methods>
+          <include name="CAAT_LoginAndTransaction_Test"/>
+          <include name="SetUp"/>
+          <include name="EnvironmentSetUp"/>
+          <include name="TestCompleted"/>
+          <include name="ClosetheBroser"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_LoginAndPurchase_Test -->
+      <class name="com.caat.qa.testcases.CAAT_OpenApplication_Test">
+        <methods>
+          <include name="EnvironmentSetUp"/>
+          <include name="ClosetheBroser"/>
+          <include name="TestCompleted"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_OpenApplication_Test -->
+      <class name="com.caat.qa.testcases.CAAT_CreateAccount_Test">
+        <methods>
+          <include name="TestCompleted"/>
+          <include name="ClosetheBroser"/>
+          <include name="EnvironmentSetUp"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_CreateAccount_Test -->
+      <class name="com.caat.qa.testcases.CAAT_ProfileAndTrans_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="ClosetheBroser"/>
+          <include name="TestCompleted"/>
+          <include name="EnvironmentSetUp"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_ProfileAndTrans_Test -->
+    </classes>
+  </test> <!-- Cross Asyst Assignment: Login and Purchase(failed) -->
+  <test name="Cross Asyst Assignment: Transaction History(failed)" parallel="tests">
+    <classes>
+      <class name="com.caat.qa.testcases.CAAT_Login_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="ClosetheBroser"/>
+          <include name="TestCompleted"/>
+          <include name="EnvironmentSetUp"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_Login_Test -->
+      <class name="com.caat.qa.testcases.CAAT_LoginAndPurchase_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="EnvironmentSetUp"/>
+          <include name="TestCompleted"/>
+          <include name="ClosetheBroser"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_LoginAndPurchase_Test -->
+      <class name="com.caat.qa.testcases.CAAT_OpenApplication_Test">
+        <methods>
+          <include name="EnvironmentSetUp"/>
+          <include name="ClosetheBroser"/>
+          <include name="TestCompleted"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_OpenApplication_Test -->
+      <class name="com.caat.qa.testcases.CAAT_CreateAccount_Test">
+        <methods>
+          <include name="TestCompleted"/>
+          <include name="ClosetheBroser"/>
+          <include name="EnvironmentSetUp"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_CreateAccount_Test -->
+      <class name="com.caat.qa.testcases.CAAT_ProfileAndTrans_Test">
+        <methods>
+          <include name="SetUp"/>
+          <include name="CAAT_LoginAndTransactionAmountVerification_Test"/>
+          <include name="ClosetheBroser"/>
+          <include name="TestCompleted"/>
+          <include name="EnvironmentSetUp"/>
+        </methods>
+      </class> <!-- com.caat.qa.testcases.CAAT_ProfileAndTrans_Test -->
+    </classes>
+  </test> <!-- Cross Asyst Assignment: Transaction History(failed) -->
+</suite> <!-- Failed suite [CAAT TEST Automation - Basic Test] -->
